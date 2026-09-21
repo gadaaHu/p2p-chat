@@ -34,7 +34,7 @@ dependencies:
   flutter_webrtc: ^0.11.5         # webrtc_manager
 
   # ── Push & local notifications ───────────────────────────────────────────────
-  firebase_messaging: ^15.1.3     # push_sync_service — FCM push tokens
+  firebase_messaging: ^16.7.0     # push_sync_service — FCM push tokens
   flutter_local_notifications: ^18.0.1  # notification_service
 
   # ── QR code (pair_screen, qr_scanner_view, safety_number_view) ──────────────
