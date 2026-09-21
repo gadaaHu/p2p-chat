@@ -15,7 +15,7 @@ dependencies:
 
   # ── Cryptography (X3DH, Double Ratchet, KDF, fingerprints) ─────────────────
   cryptography: ^2.7.0          # ECDH X25519, AES-GCM, HMAC-SHA256, HKDF
-  pointycastle: ^3.9.1          # Low-level crypto (Ed25519 signing, SHA-512)
+  pointycastle: ^4.0.0          # Low-level crypto (Ed25519 signing, SHA-512)
   convert: ^3.1.1               # hex / base64 encode-decode helpers
   crypto: ^3.0.5                # SHA-256, HMAC helpers
 
