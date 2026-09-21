@@ -1,0 +1,52 @@
+# Dart / Flutter
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+*.iml
+
+# Android
+android/.gradle/
+android/local.properties
+android/key.properties
+*.keystore
+!debug.keystore
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Runner.xcworkspace/xcuserdata/
+ios/Runner.xcodeproj/xcuserdata/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Server data
+server/*.db
+server/*.db-shm
+server/*.db-wal
+server/.env
+server/data/
+
+# Secrets
+google-services.json
+GoogleService-Info.plist
+*.jks
+*.p8
+*.p12
+*.mobileprovision
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store

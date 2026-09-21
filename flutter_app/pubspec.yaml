@@ -1,0 +1,72 @@
+name: p2p_chat
+description: "End-to-end encrypted peer-to-peer chat with Signal-protocol ratchet."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── UI / icons ──────────────────────────────────────────────────────────────
+  cupertino_icons: ^1.0.8
+
+  # ── Cryptography (X3DH, Double Ratchet, KDF, fingerprints) ─────────────────
+  cryptography: ^2.7.0          # ECDH X25519, AES-GCM, HMAC-SHA256, HKDF
+  pointycastle: ^3.9.1          # Low-level crypto (Ed25519 signing, SHA-512)
+  convert: ^3.1.1               # hex / base64 encode-decode helpers
+  crypto: ^3.0.5                # SHA-256, HMAC helpers
+
+  # ── Secure persistent storage ────────────────────────────────────────────────
+  flutter_secure_storage: ^9.2.2  # identity keys, session state, prekeys
+  sqflite: ^2.3.3+1               # local message / contact / ratchet DB
+  path_provider: ^2.1.4           # database & cache file paths
+  shared_preferences: ^2.3.2      # lightweight settings (settings_service)
+
+  # ── Networking ───────────────────────────────────────────────────────────────
+  http: ^1.2.2                    # REST calls to FastAPI signaling server
+  web_socket_channel: ^3.0.1      # WebSocket signaling (signaling_service)
+  dio: ^5.7.0                     # transfer_service / file uploads
+
+  # ── WebRTC (peer-to-peer audio/video/data) ───────────────────────────────────
+  flutter_webrtc: ^0.11.5         # webrtc_manager
+
+  # ── Push & local notifications ───────────────────────────────────────────────
+  firebase_messaging: ^15.1.3     # push_sync_service — FCM push tokens
+  flutter_local_notifications: ^18.0.1  # notification_service
+
+  # ── QR code (pair_screen, qr_scanner_view, safety_number_view) ──────────────
+  mobile_scanner: ^5.2.3          # qr_scanner_view — camera QR scanner
+  qr_flutter: ^4.1.0              # generate QR codes for pairing / safety numbers
+
+  # ── Audio (audio_service) ────────────────────────────────────────────────────
+  audioplayers: ^6.1.0            # message received sounds, call tones
+
+  # ── Permissions ──────────────────────────────────────────────────────────────
+  permission_handler: ^11.3.1     # camera, microphone, notifications
+
+  # ── State / utilities ────────────────────────────────────────────────────────
+  provider: ^6.1.2                # app-wide state (contacts, identity, settings)
+  uuid: ^4.5.1                    # outbound_message / signaling blob IDs
+  collection: ^1.19.0             # sorted sets, equality helpers
+  intl: ^0.19.0                   # date/time formatting in chat bubbles
+  equatable: ^2.0.5               # value equality on models
+
+  # ── Image / file picking (profile_screen, transfer_service) ─────────────────
+  image_picker: ^1.1.2
+  file_picker: ^8.1.4
+
+  path: any
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  integration_test:
+    sdk: flutter
+  mockito: ^5.4.4
+  build_runner: ^2.4.13
+
+flutter:
+  uses-material-design: true

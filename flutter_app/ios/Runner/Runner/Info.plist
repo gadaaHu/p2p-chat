@@ -1,0 +1,14 @@
+<key>NSCameraUsageDescription</key>
+<string>Used to scan pairing QR codes.</string>
+<key>NSLocalNetworkUsageDescription</key>
+<string>Used for peer-to-peer connections with paired devices.</string>
+<key>NSBonjourServices</key>
+<array>
+    <string>_p2p_chat._tcp</string>
+    <string>_p2p_chat._udp</string>
+</array>
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsLocalNetworking</key>
+    <true/>
+</dict>

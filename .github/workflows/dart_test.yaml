@@ -1,0 +1,7 @@
+tags:
+  integration:
+    timeout: 2x
+  webrtc:
+    timeout: 5x
+
+exclude_tags: integration
