@@ -56,7 +56,7 @@ dependencies:
 
   # ── Image / file picking (profile_screen, transfer_service) ─────────────────
   image_picker: ^1.1.2
-  file_picker: ^8.1.4
+  file_picker: ^11.0.3
 
   path: any
 dev_dependencies:
