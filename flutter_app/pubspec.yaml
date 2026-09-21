@@ -20,7 +20,7 @@ dependencies:
   crypto: ^3.0.5                # SHA-256, HMAC helpers
 
   # ── Secure persistent storage ────────────────────────────────────────────────
-  flutter_secure_storage: ^9.2.2  # identity keys, session state, prekeys
+  flutter_secure_storage: ^10.3.4  # identity keys, session state, prekeys
   sqflite: ^2.3.3+1               # local message / contact / ratchet DB
   path_provider: ^2.1.4           # database & cache file paths
   shared_preferences: ^2.3.2      # lightweight settings (settings_service)
