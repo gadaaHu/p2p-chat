@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # p2p_chat
 
 End-to-end encrypted messaging over WebRTC with a FastAPI relay for offline delivery.
@@ -43,3 +44,7 @@ Alpha. Wire format may change before 1.0.
 ## License
 
 MIT
+=======
+# p2p-chat
+peer to peer chat
+>>>>>>> 4fd8451f8e4a2b04e474b92ccf9147dd28746916
